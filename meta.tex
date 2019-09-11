@@ -1,0 +1,131 @@
+
+% ---
+% Pacotes básicos
+% ---
+\usepackage{bookmark}				% Usa a fonte Bookman Old Style
+\usepackage[T1]{fontenc}			% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage{float}
+\usepackage{url}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\usepackage{setspace}
+\usepackage[euler]{textgreek}
+
+%%%%%%%%% NOVO
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    bookmarksopen=true,
+}
+\urlstyle{same}
+
+%%%   letra capitular
+\usepackage{lettrine}
+\usepackage{palatino}
+
+%%%    tabelas - configuração
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+\usepackage{lscape}
+
+
+%%% lista de abreviações e siglas automática 
+\usepackage{acro}
+
+\input{0_pre/glossario}
+
+
+%%%%%% estilo do capítulo
+%%%%%% escolha 1 e tire o comentário
+%% acesse a página e escolha
+%%http://ctan.math.washington.edu/tex-archive/info/latex-samples/MemoirChapStyles/MemoirChapStyles.pdf
+
+%% primeiro
+%\chapterstyle{madsen}
+
+%% segundo
+%\chapterstyle{southall}
+
+%% terceiro
+%\chapterstyle{Ger}
+
+%% quarto
+%\chapterstyle{verville}
+
+%% quinto
+\setlength\midchapskip{10pt}
+\makechapterstyle{VZ23}{
+    \renewcommand\chapternamenum{}
+    \renewcommand\printchaptername{}
+    \renewcommand\chapnumfont{\Huge\bfseries\centering}
+    \renewcommand\chaptitlefont{\Huge\scshape\centering}
+    \renewcommand\afterchapternum{%
+        \par\nobreak\vskip\midchapskip\hrule\vskip\midchapskip}
+    \renewcommand\printchapternonum{%
+        \vphantom{\chapnumfont \thechapter}
+        \par\nobreak\vskip\midchapskip\hrule\vskip\midchapskip}
+}
+\chapterstyle{VZ23}
+
+%%%%%%%%%%%%%
+
+\titulo{Nome da tese, dissertação ou TCC}
+\autor{Nome do aluno}
+\local{Manaus - AM}
+\data{mês e ano}
+\orientador[Orientador(a)]{Fulano de Tal, Dr.}%Nome e titulação do(a) professor(a) orientador(a)}
+\instituicao{%
+  Universidade Federal do Amazonas - UFAM
+  \par
+  Instituto de Computação- IComp}
+\curso{%
+  Programa Pós-Graduação em Informática - PPGI}
+\tipotrabalho{Monografia}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+
+\preambulo{Exame de Qualificação submetido à avaliação, como requisito parcial, para a obtenção do título de Mestre em Informática no Programa de Pós-Graduação em Informática, Instituto de Computação.}
+
+
+% Informações do PDF
+\makeatletter
+\hypersetup{
+    	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+    pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico},
+	bookmarksdepth=4
+}
+\makeatother
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+%\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+%\setbeforesecskip{3em}
+%\setbeforesubsecskip{3em}
+
+% ---
+% compila o indice
+% ---
+\makeindex

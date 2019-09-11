@@ -1,0 +1,70 @@
+% -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------
+%  Universidade Federal do Amazonas
+%  Instituto de Computação
+%  Ciência da Computação
+%
+%  Adaptado de pacote abntex2 http://code.google.com/p/abntex2/
+%     por Roberto Cidade Fonseca.
+%  Contribuições
+%     Bruno Barreto
+% -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,	
+	a4paper,				% tamanho do papel.
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,		% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,	% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,				% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+]{abntex2/abntex2} % Entre chaves vai o caminho para o arquivo .cls
+
+%%% Pacotes utilizados %%%
+%%% No arquivo meta estão os pacotes e informações relevantes
+%%% ao arquivo como nome do autor, orientador, título
+
+\include{meta}
+
+% ---------------------------------------------------
+% INICIO DE DOCUMENTO
+% ---------------------------------------------------
+
+\begin{document}
+%%%%%   comente os capítulos indesejados para que não apareceçam
+\include{0_pre/pre}
+\include{1_introducao/cap1}
+\include{2_fundamentos/cap2}
+\include{3_trabalhosRelacionados/cap3}
+\include{4_proposta/cap4}
+\include{5_resultados/cap5}
+\include{6_consideracoesFinais/cap6}
+%referencias
+
+
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+\Spacing{1.5}
+% -----------------------------------------------------------------------------
+% Referencias Bibliograficas
+% -----------------------------------------------------------------------------
+\bibliography{referencias}
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+\include{8_apendice/cap8.tex}
+\include{9_anexos/cap9.tex}
+
+\end{document}

@@ -1,0 +1,117 @@
+% ---
+% Capítulo 3
+% ---
+\chapter{Capítulo 3}
+
+Algumas regras devem ser observadas na redação da monografia:.
+
+
+	\begin{itemize}
+		\item ser claro, preciso, direto, objetivo e conciso, utilizando frases curtas e evitando ordens inversas desnecessárias;
+		
+		\item construir períodos com no máximo duas ou três linhas, bem como parágrafos com cinco linhas cheias, em média, e no máximo oito (ou seja, não construir parágrafos e períodos muito longos, pois isso cansa o(s) leitor(es) e pode fazer com que ele(s) percam a linha de raciocínio desenvolvida);
+		
+		\item a simplicidade deve ser condição essencial do texto; a simplicidade do texto não implica necessariamente repetição de formas e frases desgastadas, uso exagerado de voz passiva (como será iniciado, será realizado), pobreza vocabular etc. Com palavras conhecidas de todos, é possível escrever de maneira original e criativa e produzir frases elegantes, variadas, fluentes e bem alinhavadas;
+		
+		\item adotar como norma a ordem direta, por ser aquela que conduz mais facilmente o leitor à essência do texto, dispensando detalhes irrelevantes e indo diretamente ao que interessa, sem rodeios (verborragias);
+
+		\item não começar períodos ou parágrafos seguidos com a mesma palavra, nem usar repetidamente a mesma estrutura de frase;
+
+		\item desprezar as longas descrições e relatar o fato no menor número possível de palavras;
+		
+		\item recorrer aos termos técnicos somente quando absolutamente indispensáveis e nesse caso colocar o seu significado entre parênteses (ou seja, não se deve admitir que todos os que lerão o trabalho já dispõem de algum conhecimento desenvolvido no mesmo);
+		
+		\item dispensar palavras e formas empoladas ou rebuscadas, que tentem transmitir ao leitor mera ideia de erudição;
+
+		\item não perder de vista o universo vocabular do leitor, adotando a seguinte regra prática: nunca escrever o que não se diria;
+
+		\item usar termos coloquiais ou de gíria com extrema parcimônia (ou mesmo nem serem utilizados) e apenas em casos muito especiais, para não darem ao leitor a ideia de vulgaridade e descaracterizar o trabalho;
+
+		\item ser rigoroso na escolha das palavras do texto, desconfiando dos sinônimos perfeitos ou de termos que sirvam para todas as ocasiões;
+
+		\item em geral, há uma palavra para definir uma situação;
+
+		\item encadear o assunto de maneira suave e harmoniosa, evitando a criação de um texto onde os parágrafos se sucedem uns aos outros como compartimentos estanques, sem nenhuma fluência entre si;
+
+		\item ter um extremo cuidado durante a redação do texto, principalmente com relação às regras gramaticais e ortográficas da língua;
+
+		\item geralmente todo o texto é escrito na forma impessoal do verbo, não se utilizando, portanto, de termos em primeira pessoa, seja do plural ou do singular.
+
+	\end{itemize}
+
+	Continuação.
+	
+	\section{Tabelas}
+	
+		Teste de uma tabela:
+
+		\begin{table}[htbp]
+			\caption{Tabela sem sentido.}
+			\label{tabela-ssentido}
+			\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				Título Coluna & Título Coluna \\
+				1 & 2 \\
+				\hline
+				X & Y \\
+				\hline
+				X & W \\
+				\hline
+			\end{tabular}
+			\end{center}
+		\end{table}
+		
+		\begin{table}[H]
+        	\centering
+        	\begin{tabular}{|c|c|c|}
+        		\hline
+        		\textbf{LAN sem fio} & \textbf{Frequência} & \textbf{Taxa de Transmissão}  \\ \hline
+        		\textbf{802.11b} & 2,4 a 2,485 GHz& 11 Mbps\\ \hline
+        		\textbf{802.11g} & 2,4 GHz e 5 GHz& 54 Mbps \\ \hline
+        		\textbf{802.11n} & 2,4 GHz e 5 GHz & 200 Mbps a 600 Mbps \\ \hline
+        		\textbf{LoRa} & 868, 433, 915, 902 e 928 MHz & 50 Kbps \\ \hline
+        	\end{tabular}
+        	\caption{\label{table:transmissaoSemFio}Comparação entre os padrões de comunicação sem fio}
+        \end{table}
+
+        \begin{table}[h]
+        	\centering
+        	\begin{tabular}{p{7cm}S[table-format=0.2]S[table-format=0.2]S[table-format=0.2]S[table-format=0.2]S[table-format=0.2]S[table-format=0.2]S[table-format=0.2]}
+        		\toprule	
+        		2019 & {Ago} & {Set} & {Out} & {Nov} & {Dez} & {Jan} & {Fev}
+        		\\
+        		\midrule
+        		Revisão bibliográfica  & X &  &  &  &  &  &  \\ 
+        		Escrever e revisar dissertação  & X & X & X & X & X &  &  \\
+        		Preparação dos experimentos & X & X & X & X &  &  &  \\ 
+        		Experimentos e análise dos resultados  & X & X & X & X & X &  &  \\ 
+        		Publicação de Resultados &  &  &  &  & X & X & X \\
+        		\bottomrule
+        	\end{tabular}
+        	\caption{\label{table:cronogramaT}Cronograma.}
+        \end{table}		
+		
+        \begin{table}[H]
+        	\centering
+        	\begin{tabular}{p{0.8cm}S[table-format=0.1]S[table-format=0.1]S[table-format=0.1]S[table-format=0.1]S[table-format=0.1]}
+        		\toprule
+        		{\textbf{Nº}} & {\textbf{Ano}} & {\textbf{Mula}} & {\textbf{Network Coding}} & {\textbf{Routing}} & {\textbf{Simulador}}
+        		\\
+        		\midrule
+        		{[1]} & {2012} & {Proteus} & {XOR} & \textit{store-and-forward} & {aplicação real}   \\
+        		{[2]} & {2016} & {Ônibus} & {XOR} & \textit{store-and-forward} & \textit{The ONE} \\ 
+        		{[3]} & {2016} & {Barco} & {XOR} & {ER, EOR, FCR, SWR} & \textit{The ONE}   \\
+        		\bottomrule
+        	\end{tabular}
+        	\caption{\label{table:trabalhoMulaNC}Relação dos trabalhos sobre Mula de Dados com NC}	
+        \end{table}
+	
+	\section{Seção 2}
+	
+		Seção 2.
+
+	\section{Seção 3}
+	
+		Seção 3.
+		

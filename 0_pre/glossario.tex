@@ -1,0 +1,70 @@
+%%%  LISTA DE ABREVIAÇÕES
+% probably a good idea for the nomenclature entries:
+
+\acsetup{first-style=short}
+%Padrão para a lista de abreviações
+% class `abbrev': abbreviations:
+
+%NOTE QUE SOMENTE OS QUE SÃO CHAMADOS NO DECORRER DO TEXTO IRÃO APARECER NA LISTA DE ABREVIATURAS E SIMBOLOS
+%PADRÃO PARA ABREVIATURA
+%\DeclareAcronym{}{
+%	short = ,
+%	long  = \textit{},
+%	class = abbrev
+%}
+
+%PADRÃO PARA SIMBOLO
+%\DeclareAcronym{}{
+%	short = ,
+%	long  = \textit{},
+%   sort = ,
+%	class = nomencl
+%}
+% use a página a seguir para coletar simbolos para pôr no latex
+% https://texblog.org/2012/03/15/greek-letters-in-text-without-changing-to-math-mode/
+
+\DeclareAcronym{sbc}{
+	short = SBC,
+	long  = Sociedade Brasileira de Computação,
+	class = abbrev
+}
+
+\DeclareAcronym{abnt}{
+	short = \textit{ABNT},
+	short-plural = \textit{s},
+	long  = \textit{Associação Brasileira de Normas Técnicas},
+	class = abbrev
+}
+
+\DeclareAcronym{abntex}{
+	short = \textit{abnTeX},
+	short-plural = \textit{s},
+	long  = \textit{ABsurdas Normas para TeX},
+	class = abbrev
+}
+
+%\DeclareAcronym{}{
+%	short = ,
+%	long  = \textit{},
+%	class = abbrev
+%}
+
+%%%  LISTA DE SIMBOLOS
+%Padrão para lista de símbolos
+% class `nomencl': simbolos
+\DeclareAcronym{megaByte}{
+	short = MB ,
+	long  = é uma unidade de medida de informação que equivale a 1000000 bytes,
+	sort  = MB,
+	class = nomencl
+}
+
+% para simbolos matemáticos, utilize o padrão a seguir, pois não necessita pôr o texto em modo matemático
+% https://texblog.org/2012/03/15/greek-letters-in-text-without-changing-to-math-mode/
+
+\DeclareAcronym{lambda}{
+	short =  \textlambda ,
+	long  = comprimento de onda,
+	sort  = \textlambda,
+	class = nomencl
+}
